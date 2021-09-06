@@ -1,10 +1,16 @@
 import requests, json
-api_key = None
+#api_key = None
 URL = 'https://api.tensorbox.ai'
 
 class Client:
-    @staticmethod
-    def generate(payload):
+    api_key = None
+    @classmethod
+    def set_api_key(cls, key):
+        cls.api_key = key
+
+    @classmethod
+    def generate(cls, payload):
+        api_key = cls.api_key
         if api_key == None:
             raise Exception("API key has to be defined")
         payload['uid'] = api_key 

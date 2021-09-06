@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="tensorbox",
-    version="0.0.1",
+    name="tensorboxsdk",
+    version="1.0.1",
     author="TensorBox",
     author_email="gettensorbox@gmail.com",
     description="Pytnon bindings for the TensorBox API",
