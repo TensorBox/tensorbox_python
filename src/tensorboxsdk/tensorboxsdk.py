@@ -14,7 +14,7 @@ class Client:
         if api_key == None:
             raise Exception("API key has to be defined")
         payload['uid'] = api_key 
-        res = requests.post(URL+"/api/get_prediction", json=payload)
+        res = requests.post(URL+"/api/generate", json=payload)
         if res.status_code == 200:
             return json.loads(res.text)
         else:
