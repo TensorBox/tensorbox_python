@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="tensorboxsdk",
-    version="1.0.1",
+    version="1.0.2",
     author="TensorBox",
     author_email="gettensorbox@gmail.com",
     description="Pytnon bindings for the TensorBox API",
