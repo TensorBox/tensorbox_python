@@ -13,7 +13,7 @@ class Client:
         api_key = cls.api_key
         if api_key == None:
             raise Exception("API key has to be defined")
-        payload['uid'] = api_key 
+        payload['api_key'] = api_key 
         res = requests.post(URL+"/api/generate", json=payload)
         if res.status_code == 200:
             return json.loads(res.text)
